@@ -1,23 +1,33 @@
-# LA-Paper
-This repository contains the paper written for the mini-project of course Linear Algebra and its Applications (UE18CS203).<br>
-The topic of our project was: <b><u>Introduction to Markov Chains</b></u>.
+# Introduction to Markov Chains (Linear Algebra Mini-Project)
 
-<br>
+## Project Overview
+This repository contains the research paper, presentation, and source code developed for the mini-project in the **Linear Algebra and its Applications (UE18CS203)** course. 
 
-Markov Chains are mathematical systems that experience transitions from one state to
-another according to certain probabilistic rules. A Markov chain is a stochastic process, but it
-differs from a general stochastic process in that a Markov chain must be “memory-less.” In
-other words, the probability of transitioning to any particular state is dependent solely on the
-current state, and time elapsed. This is called the Markov property. Markov Chains are a
-fairly common, and relatively simple way to statistically model random processes.
-The aim and scope of the project report is to provide a brief introduction to Markov Chains
-and also to present examples of different applications of the same within the financial and
-political world.
+The project explores **Markov Chains**, which are mathematical systems that undergo transitions from one state to another according to specific probabilistic rules. The core focus is on the "Markov Property"—the principle that a stochastic process is "memory-less," meaning the probability of transitioning to any particular state depends solely on the current state, not the sequence of events that preceded it.
 
-<br>
+## Key Concepts Explored
+* **Discrete-Time Markov Chains:** Modeling events that happen in distinct, countable steps.
+* **Transition (Stochastic) Matrices:** Constructing square matrices where rows/columns represent probability vectors of transitioning between states.
+* **State Vectors:** Calculating the probability of the system being in a particular state after *n* transitions ($S_n = S_0P^n$).
+* **Steady-State Convergence:** Utilizing eigenvalues and eigenvectors to find the long-term equilibrium of a system where probabilities settle into a constant state.
 
-## Team Members:
-1. Anup N. (PES1201800283)
-2. K. Sreesh Reddy (PES1201801580)
+## Real-World Applications Analyzed
+The report breaks down the application of matrix mathematics to several real-world scenarios:
+1. **Weather Forecasting:** Predicting sunny vs. rainy days using simple 2x2 transition matrices.
+2. **Voting Behavior:** Estimating vote shifts between political parties (e.g., Congress, BJP, and Rest) over successive elections.
+3. **Financial Market Trends:** Using historical data to predict the probability of Bull, Bear, or Stagnant markets converging over time.
+4. **Population Dynamics:** Modeling migration between cities and suburbs to calculate the exact population distribution when net movement reaches zero.
 
+## 🛠️ Tools & Technologies Used
+* **Scilab:** Used for advanced matrix computations, including calculating eigenvalues/eigenvectors and performing Gaussian elimination.
+* **Python (NumPy, Pandas, Matplotlib):** Used to iterate transition matrices and plot the convergence of probabilities to visualize steady states.
 
+## 📂 Repository Structure
+* `LA_PES1201801580.pdf`: The comprehensive final project report detailing all mathematical proofs, theories, and application examples.
+* `LINEAR ALGEBRA MINI PROJECT PPT.pdf`: The slide deck used for project presentation.
+* `city.sce`: A Scilab script implementing Gaussian elimination to solve the steady-state vector $Ax = 0$ for the city/suburb population movement example.
+* `transition2.jpg`: State transition diagrams used in the report.
+
+## Team Members
+* Anup N. (PES1201800283)
+* K. Sreesh Reddy (PES1201801580)
